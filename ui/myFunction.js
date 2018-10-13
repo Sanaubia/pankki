@@ -21,6 +21,7 @@ function loadXMLDoc(page) {
 function peruuta()
 {
   document.getElementById("saaja").value = "";
+  document.getElementById("tilinumero").value = "";
   document.getElementById("viite").value = "";
   document.getElementById("viesti").value = "";
   document.getElementById("maara").value = "";

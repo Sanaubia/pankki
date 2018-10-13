@@ -21,6 +21,9 @@
       <tr><td><label for="saaja">SAAJA</label>
       <td><input type="text" name="saaja" id="saaja" size="49"> <br>
 
+      <tr><td><label for="tilinumero">TILINUMERO</label>
+      <td><input type="text" name="tilinumero" id="tilinumero" size="49"> <br>
+
       <tr><td><label for="viite">VIITE</label>
       <td><input type="text" name="viite" id="viite" size="49"> <br>
 
