@@ -1,11 +1,13 @@
-<script src="myFunction.js" charset="utf-8"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
+  <script src="myFunction.js" charset="utf-8"></script>
   <body>
+
     <?php
     require "connection.php";
     $sql="SELECT * FROM tilit";

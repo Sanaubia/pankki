@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="myFunction.js" charset="utf-8"></script>
   </head>
   <body>
-    <?php
-    require "connection.php";
-    $sql="SELECT * FROM tili";
-    $resultObject = $db->query($sql);
-    ?>
 
-    <select name="valittu">
-    <?php
-      foreach($resultObject as $row) {
-        echo '<option value="'.$row['Tilinumero'].'">'.$row['Saldo'].'</option>';
-      }
-    ?>
+
+
+      <button onclick="Saldo()">Peruuta</button>
+
+
 
 
   </body>

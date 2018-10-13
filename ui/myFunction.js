@@ -28,6 +28,37 @@ function peruuta()
   document.getElementById("pvm").value = "";
 }
 
+
+function Saldo()
+{
+  var url = '../api/saldo1.php';
+  var xhttp = new XMLHttpRequest();
+  xhttp.open('GET', url, true);
+  var jsonData = '';
+  var data = '<table class="table table-bordered table-hover">';
+  data += '<tr><th>idTili</th><th>Tilinumero</th><th>Asiakasnumero</th><th>Saldo</th></tr>';
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      jsonData = JSON.parse(xhttp.responseText);
+      for (x in jsonData) {
+        data +=
+          '<tr><td>' +
+          jsonData[x].idTili +
+          '</td><td>' +
+          jsonData[x].Tilinumero +
+          '</td><td> ' +
+          jsonData[x].Asiakasnumero +
+          '</td><td>' +
+          jsonData[x].Saldo
+          + '</td></tr>';
+      }
+      data += '</table>';
+      document.getElementById('results').innerHTML = data;
+    }
+  };
+  xhttp.send();
+}
+
 function hyvaksyLasku()
 {
   var url = '../api/uusimaksu.php';
@@ -37,9 +68,9 @@ function hyvaksyLasku()
 	var formData = new FormData(form);
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 201) {
-		document.getElementById('results').innerHTML = 'Lasku maksettu';
+		document.getElementById('results').innerHTML = '';
 		} else {
-		document.getElementById('results').innerHTML = 'Laskun maksussa pahtui virhe';
+		document.getElementById('results').innerHTML = '';
 		}
 	};
 	xhttp.send(formData);

@@ -11,7 +11,7 @@
 <table class='d'>
     <tr><td>  <label>TILI</label>
     <td>  <select name="tili" id="tili" size="auto">
-          <option value="tili1">Tili111111111111111111111111111111111111</option>
+          <option value="tili1">Tili111111</option>
           <option value="tili2">Tili2</option>
           <option value="tili3">Tili3</option>
       </select>

@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php
-    require "connection.php";
-    $sql="SELECT * FROM tili";
-    $resultObject = $db->query($sql);
-    ?>
+<?php
+	require "connection.php";
+	$sql = "SELECT * FROM Tili where idTili = 1";
 
-    <select name="valittu">
-    <?php
-      foreach($resultObject as $row) {
-        echo '<option value="'.$row['Tilinumero'].'">'.$row['Saldo'].'</option>';
-      }
-    ?>
+	$resultObject = $db->query($sql);
 
+	$resultArray = $resultObject->fetchAll(PDO::FETCH_ASSOC);
 
-  </body>
-</html>
+	echo json_encode($resultArray);
+?>
