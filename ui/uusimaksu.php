@@ -21,24 +21,25 @@
             <option value="2">Tili2</option>
             <option value="3">Tili3</option>
         </select>
+        <br>
 
-      <label for="saaja">SAAJA</label>
-      <input type="text" name="saaja" id="saaja"><br>
+      <td><tr><label for="saaja">SAAJA</label></td>
+      <td><input type="text" name="saaja" id="saaja"><br></td>
 
-      <label for="tilinumero">TILINUMERO</label>
-      <input type="text" name="tilinumero" id="tilinumero"><br>
+      <td><tr><label for="tilinumero">TILINUMERO</label></td>
+      <td><input type="text" name="tilinumero" id="tilinumero"></td><br>
 
-      <label for="viite">VIITE</label>
-      <input type="text" name="viite" id="viite"><br>
+      <td><tr><label for="viite">VIITE</label></td>
+<td><input type="text" name="viite" id="viite"><br></td><br>
 
-      <label for="viesti">VIESTI</label>
-      <textarea name ="viesti" id="viesti" placeholder="Syötä viesti tarvittaessa"></textarea><br>
+      <td><tr><label for="viesti">VIESTI</label></td>
+      <td><textarea name ="viesti" id="viesti" placeholder="Syötä viesti tarvittaessa"></textarea><br></td>
 
-      <label for="maara">MÄÄRÄ</label>
-      <input type="text" name="maara" id="maara" placeholder="0.0€"><br>
+      <td><tr><label for="maara">MÄÄRÄ</label></td>
+      <td><input type="text" name="maara" id="maara" placeholder="0.0€"><br></td>
 
-      <label for="pvm">ERÄPÄIVÄ</label>
-      <input type="text" name="pvm" id="pvm" placeholder="31.12.2018"><br>
+      <td><tr><label for="pvm">ERÄPÄIVÄ</label></td>
+      <td><input type="text" name="pvm" id="pvm" placeholder="31.12.2018"><br></td>
       </form>
 
       <input type="radio" name="kuitti" value="kuitti"> Kuitti
