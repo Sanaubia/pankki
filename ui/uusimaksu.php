@@ -8,41 +8,45 @@
 
 <h2>UUSI MAKSU</h2><br><br>
 
-<table class='d'>
-    <tr><td>  <label>TILI</label>
-    <td>  <select name="tili" id="tili" size="auto">
-          <option value="tili1">Tili111111</option>
-          <option value="tili2">Tili2</option>
-          <option value="tili3">Tili3</option>
-      </select>
-<br>
+
+
+
 
       <form id = 'uusimaksu'>
-      <tr><td><label for="saaja">SAAJA</label>
-      <td><input type="text" name="saaja" id="saaja" size="49"> <br>
 
-      <tr><td><label for="tilinumero">TILINUMERO</label>
-      <td><input type="text" name="tilinumero" id="tilinumero" size="49"> <br>
 
-      <tr><td><label for="viite">VIITE</label>
-      <td><input type="text" name="viite" id="viite" size="49"> <br>
+        <label>TILI</label>
+       <select name="tili" id="tili" size="auto">
+            <option value="1">Tili111111</option>
+            <option value="2">Tili2</option>
+            <option value="3">Tili3</option>
+        </select>
 
-      <tr><td><label for="viesti">VIESTI</label>
-      <td><textarea id="viesti" rows="8" cols="50" placeholder="Syötä viesti tarvittaessa"></textarea>
+      <label for="saaja">SAAJA</label>
+      <input type="text" name="saaja" id="saaja"><br>
 
-      <tr><td><label for="määrä">MÄÄRÄ</label>
-      <td><input type="text" name="määrä" id="maara" size="20" placeholder="0.0€">
+      <label for="tilinumero">TILINUMERO</label>
+      <input type="text" name="tilinumero" id="tilinumero"><br>
 
-      <tr><td><label for="pvm">ERÄPÄIVÄ</label>
-      <td><input type="text" name="pvm" id="pvm" size="20" placeholder="31.12.2018"> <br>
+      <label for="viite">VIITE</label>
+      <input type="text" name="viite" id="viite"><br>
 
+      <label for="viesti">VIESTI</label>
+      <textarea name ="viesti" id="viesti" placeholder="Syötä viesti tarvittaessa"></textarea><br>
+
+      <label for="maara">MÄÄRÄ</label>
+      <input type="text" name="maara" id="maara" placeholder="0.0€"><br>
+
+      <label for="pvm">ERÄPÄIVÄ</label>
+      <input type="text" name="pvm" id="pvm" placeholder="31.12.2018"><br>
       </form>
-      <tr><td><input type="radio" name="kuitti" value="kuitti"> Kuitti <br>
-      <td><input type="radio" name="kuitti" value="eikuitti"> Ei kuittia
-      <tr><td><button onclick="hyvaksyLasku()">Hyväksy</button><br>
-      <td><button onclick="peruuta()">Peruuta</button>
 
-</table>
+      <input type="radio" name="kuitti" value="kuitti"> Kuitti
+      <input type="radio" name="kuitti" value="eikuitti"> Ei kuittia<br><br>
+      <button onclick="hyvaksyLasku()">Hyväksy</button>
+      <button onclick="peruuta()">Peruuta</button>
+
+
 
 
 
